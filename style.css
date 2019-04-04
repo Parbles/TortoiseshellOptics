@@ -65,6 +65,10 @@ ul li{
   padding: 1rem 1rem;
 }
 
+.truncated-menu{
+  display: none;
+}
+
 .main-banner{
   background-color: white;
   padding: 1.5rem 5rem;
@@ -88,6 +92,47 @@ nav .container{
   max-width: 100%
 }
 
+.main.banner{
+  padding: 0.7rem 4rem;
+  margin-top: 5rem;
+  margin-right: 2rem;
+}
+
+.main.banner h1{
+  font-size: 1.33rem;
+}
+
+}
+
+@media only screen and (max-width: 640px){
+  .menu ul{
+    display: none;
+  }
+
+  .menu ul .truncated-menu{
+    display: block;
+  }
+
+  header div span {
+    display: none;
+  }
+
+  header{
+    background-position: 20%;
+    height: 17rem
+  }
+
+  .main.banner{
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    width: 100%
+    text-align: center;
+  }
+
+.main.banner h1{
+  font-size: 1rem;
+}
+
 }
 
 /*Supporting*/
@@ -95,6 +140,15 @@ nav .container{
 .supporting {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 640px){
+  .supporting{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
 }
 
 /*Service*/
@@ -119,6 +173,14 @@ nav .container{
   width: 3.5rem;
 }
 
+@media only screen and (max-width: 640px){
+  .service{
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+}
+
 /*Info*/
 
 .info{
@@ -139,6 +201,22 @@ nav .container{
   max-width: 10rem;
 }
 
+@media only screen and (max-width: 640px){
+  .info {
+    width: auto;
+}
+.info .title{
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.info p{
+  padding: 1rem;
+  font-size: .77rem;
+}
+  }
+
 /*Footer*/
 
 footer{
@@ -152,4 +230,15 @@ footer img{
   height: 1.5rem;
   margin-left: 25rem;
   margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 640px){
+  footer{
+    justify-content: center;
+  }
+
+  footer div{
+    display: none;
+  }
 }
